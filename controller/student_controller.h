@@ -18,8 +18,16 @@ class StudentController{
             }
             service.closeAll();
         }
-        void remove(){
-
+        void remove(int id){
+            service.init("u");
+            while(service.file.read((char*)&model,sizeof(model))){
+                if (id == model.getId()){
+                    
+                } else {
+                    service.temp.write((char*)&model,sizeof(model));
+                }
+            }
+            service.closeAll();
         }
         void get(){
             service.get();

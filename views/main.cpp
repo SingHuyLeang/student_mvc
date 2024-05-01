@@ -29,6 +29,11 @@ int main(){
                 cout << "Enter student id to search : ";cin >> data;
                 controller.update(data);
             }break;
+            case 4:{
+                int data;
+                cout << "Enter student id to delete : ";cin >> data;
+                controller.remove(data);
+            }break;
         }
         cout << "Press enter to continue ...\n";
     } while (getch()==13); // Enter to next...
