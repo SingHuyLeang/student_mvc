@@ -23,7 +23,12 @@ int main(){
             case 2:{
                 controller.get();
                 controller.close();
-            };
+            }break;
+            case 3:{
+                int data;
+                cout << "Enter student id to search : ";cin >> data;
+                controller.update(data);
+            }break;
         }
         cout << "Press enter to continue ...\n";
     } while (getch()==13); // Enter to next...

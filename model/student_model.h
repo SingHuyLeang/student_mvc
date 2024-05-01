@@ -20,6 +20,9 @@ class Student{
             strcpy(this->gender,gender);
             this->score = score;
         }
+        int getId(){
+            return id;
+        }
         void input(){
             cout << "Input id     : ";cin>>id;
             cout << "Input name   : ";cin>>name;
